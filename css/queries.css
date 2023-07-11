@@ -1,0 +1,44 @@
+/**********************/
+/* Bellow 944px (Tablets) */
+/**********************/
+@media (max-width: 59em) {
+  html {
+    /* 9 / 16 */
+    font-size: 56.25%;
+  }
+}
+/**********************/
+/* Bellow 816px (Smaller Tablets) */
+/**********************/
+@media (max-width: 51em) {
+  html {
+    /* 7 / 16 */
+    font-size: 50%;
+  }
+}
+/**********************/
+/* Bellow 640px (Mobile Phones) */
+/**********************/
+@media (max-width: 40em) {
+  html {
+    /* 7 / 16 */
+    font-size: 43.75%;
+  }
+  .flex-container {
+    gap: 1rem;
+  }
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .img-box {
+    width: 35%;
+    justify-self: center;
+  }
+  .text-box {
+    align-items: center;
+  }
+  .forget-password:link,
+  .forget-password:visited {
+    margin-right: 0;
+  }
+}

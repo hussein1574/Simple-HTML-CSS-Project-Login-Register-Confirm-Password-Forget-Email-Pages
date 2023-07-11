@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link
+      href="https://fonts.cdnfonts.com/css/helvetica-neue-5"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="img-box">
+        <picture>
+          <source srcset="imgs/image.webp" type="image/webp" />
+          <source srcset="img/image.png" type="image/png" />
+          <img class="image" src="imgs/image.png" alt="Welcome Back" />
+        </picture>
+      </div>
+      <div class="text-box">
+        <h1 class="primary-heading">Sign in</h1>
+        <form class="login-form" action="#">
+          <input
+            class="input-box"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
+          />
+          <input
+            class="input-box input-box--password"
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+          <div class="flex-container rem-flex">
+            <div class="remeber-me">
+              <input
+                class="input-box check-box"
+                type="checkbox"
+                name="remeber-me"
+                id="remeber-me"
+              />
+              <label for="remeber-me">Remember me</label>
+            </div>
+            <a class="forget-password" href="#">Forgot your password?</a>
+          </div>
+          <button class="btn btn--form">Login</button>
+        </form>
+        <p class="subheading">Or Connect with</p>
+        <div class="flex-container">
+          <button class="btn btn--social btn--facebook">
+            <ion-icon name="logo-facebook"></ion-icon><span>Facebook</span>
+          </button>
+          <button class="btn btn--social btn--twitter">
+            <ion-icon name="logo-twitter"></ion-icon><span>Twitter</span>
+          </button>
+        </div>
+        <div class="flex-container register">
+          <p class="sign-up-text">Dont have an account ?</p>
+          <a class="sign-up-btn" href="#">Sign up</a>
+        </div>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
