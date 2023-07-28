@@ -37,8 +37,18 @@
   .text-box {
     align-items: center;
   }
+  .heading {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .primary-heading {
+    line-height: 1;
+  }
   .forget-password:link,
   .forget-password:visited {
     margin-right: 0;
+  }
+  .btn--register {
+    margin-left: 1rem;
   }
 }

@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>Register</title>
+    <link
+      href="https://fonts.cdnfonts.com/css/helvetica-neue-5"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
-    <link
-      href="https://fonts.cdnfonts.com/css/helvetica-neue-5"
-      rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/queries.css" />
@@ -22,14 +22,30 @@
     <div class="container">
       <div class="img-box">
         <picture>
-          <source srcset="imgs/image.webp" type="image/webp" />
-          <source srcset="imgs/image.png" type="image/png" />
-          <img class="image" src="imgs/image.png" alt="Welcome Back" />
+          <source srcset="imgs/register.webp" type="image/webp" />
+          <source srcset="img/register.png" type="image/png" />
+          <img class="image" src="imgs/register.png" alt="Welcome" />
         </picture>
       </div>
-      <div class="text-box">
-        <h1 class="primary-heading">Sign in</h1>
-        <form class="login-form" action="#">
+      <div class="text-box smaller-flex-gap">
+        <h1 class="primary-heading">Sign up</h1>
+        <form class="register-form" action="#">
+          <input
+            class="input-box"
+            type="text"
+            name="first-name"
+            id="first-name"
+            placeholder="First Name"
+            required
+          />
+          <input
+            class="input-box"
+            type="text"
+            name="last-name"
+            id="last-name"
+            placeholder="Last Name"
+            required
+          />
           <input
             class="input-box"
             type="email"
@@ -49,34 +65,42 @@
             />
             <i id="toggler" class="far fa-eye icon"></i>
           </div>
-          <div class="flex-container rem-flex">
-            <div class="remeber-me">
-              <input
-                class="input-box check-box"
-                type="checkbox"
-                name="remeber-me"
-                id="remeber-me"
-              />
-              <label for="remeber-me">Remember me</label>
-            </div>
-            <a class="forget-password" href="forget-password.html"
-              >Forgot your password?</a
+          <div class="password-box">
+            <input
+              class="input-box input-box--password"
+              type="password"
+              name="confirm-password"
+              id="confirm-password"
+              placeholder="Confirm Password"
+              required
+            />
+            <i id="toggler" class="far fa-eye icon"></i>
+          </div>
+
+          <div class="remeber-me">
+            <input
+              class="input-box check-box"
+              type="checkbox"
+              name="terms"
+              id="terms"
+            />
+            <label for="terms"
+              >I agree to the Terms of Service and Privary Policy</label
             >
           </div>
-          <button class="btn btn--form">Login</button>
+          <div class="flex-container rem-flex">
+            <a class="forget-password" href="index.html">Already registered?</a>
+            <button class="btn btn--form btn--register">Register</button>
+          </div>
         </form>
         <p class="subheading">Or Connect with</p>
-        <div class="flex-container">
+        <div class="flex-container margin-bottom">
           <button class="btn btn--social btn--facebook">
             <ion-icon name="logo-facebook"></ion-icon><span>Facebook</span>
           </button>
           <button class="btn btn--social btn--twitter">
             <ion-icon name="logo-twitter"></ion-icon><span>Twitter</span>
           </button>
-        </div>
-        <div class="flex-container register">
-          <p class="sign-up-text">Dont have an account ?</p>
-          <a class="sign-up-btn" href="register.html">Sign up</a>
         </div>
       </div>
     </div>

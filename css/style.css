@@ -42,10 +42,14 @@ body {
   gap: 2.3rem;
 }
 .primary-heading {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 700;
   line-height: 0.45;
   letter-spacing: -0.5px;
+  margin: 2rem 0;
+}
+.secondary-heading {
+  margin-top: 0;
 }
 .input-box {
   font-family: inherit;
@@ -60,7 +64,36 @@ body {
   color: #555;
 }
 .input-box--password {
+  width: 100%;
   font-weight: 600;
+}
+.password-box {
+  position: relative;
+}
+.email-box {
+  position: relative;
+}
+.email-box .input-box {
+  width: 100%;
+  padding-left: 4rem;
+}
+.icon,
+.icon:link,
+.icon:visited {
+  position: absolute;
+  font-size: 1.6rem;
+  top: 1.4rem;
+  right: 1.4rem;
+}
+
+.icon:hover,
+.icon:active {
+  cursor: pointer;
+}
+.email-box .icon {
+  font-size: 1.6rem;
+  top: 1.4rem;
+  left: 1.4rem;
 }
 .flex-container {
   display: flex;
@@ -150,6 +183,15 @@ body {
 .btn--twitter:active {
   background-color: #33bdf1;
 }
+.btn--grey,
+.btn--grey:link,
+.btn--grey:visited {
+  background-color: #9ca2ae;
+}
+.btn--grey:hover,
+.btn--grey:active {
+  background-color: #b0b6c2;
+}
 .register {
   align-self: center;
   gap: 3rem;
@@ -170,4 +212,29 @@ body {
 .sign-up-btn:hover,
 .sign-up-btn:active {
   color: #37655f;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.smaller-flex-gap {
+  gap: 1.5rem !important;
+}
+
+.btn--register {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.two-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.btn--large-text {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
