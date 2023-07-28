@@ -39,6 +39,7 @@ Here are some screenshots of the project's UI:
   <img src="https://github.com/hussein1574/login-form/assets/10996722/80e56e6f-5e86-42ee-96c5-fc1e54094657" alt="Confirm Password Page" width="400" />
   <img src="https://github.com/hussein1574/login-form/assets/10996722/f156bcfa-dcad-4974-a86b-70527f003579" alt="Forget Email Page" width="400" />
 </div>
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
